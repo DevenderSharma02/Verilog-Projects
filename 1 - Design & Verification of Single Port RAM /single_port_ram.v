@@ -9,7 +9,7 @@ module single_port_ram(
     input we,               // write enable pin
     input clk,              // clock
     output [7:0] q          // output data
-)
+);
 
 reg [7:0] ram[63:0];      // 64x8 bit RAM
 reg [5:0] addr_reg;       // address register
@@ -18,7 +18,7 @@ always @(posedge clk ) begin
     if(we)
     ram[addr] <= data;
     else
-    add_reg <= addr;
+    addr_reg <= addr;
 end
 
 assign q = ram[addr_reg];
