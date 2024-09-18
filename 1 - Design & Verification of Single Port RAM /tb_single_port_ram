@@ -6,7 +6,7 @@ module single_port_ram_tb;
   reg [5:0] addr;   
   reg we;            
   reg clk;         
-  wire q;           
+  wire [7:0] q;           
   
   // Instantiate the Single Port RAM here (assume the instance name is 'SPR')
   single_port_ram SPR (.clk(clk), .we(we), .addr(addr), .data(data), .q(q));
