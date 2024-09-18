@@ -1,3 +1,7 @@
+// Design Code For Single Port RAM
+// Date : 12/09/2024
+
+
 `timescale 1ns / 1ps
 module single_port_ram(
     input [7:0] data,       // input data
